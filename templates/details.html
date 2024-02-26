@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vendor and Product Details</title>
+  </head>
+  <body>
+    <h1>
+      Vendor, Vehicle, and Product Details for P.O. Number: {{ po_number }}
+    </h1>
+    <h2>Vehicle Information:</h2>
+    <ul>
+      <li>Vehicle Number: {{ vehicle_number }}</li>
+    </ul>
+    <h1>Quality Status:</h1>
+    {% if qualitystatus %}
+    <p>Pass</p>
+    {% else %}
+    <p>Fail</p>
+    {% endif %}
+    <h2>Vendor Information:</h2>
+    <ul>
+      <li>Name: {{ vendor.name }}</li>
+    </ul>
+    <h2>Product Information:</h2>
+    <ul>
+      <li>Name: {{ product.name }}</li>
+    </ul>
+  </body>
+</html>

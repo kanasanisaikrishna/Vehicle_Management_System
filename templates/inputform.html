@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Enter P.O. Number</title>
+  </head>
+  <body>
+    <h1>Enter Purchase Order (P.O.) Number</h1>
+    <form method="post" action="/details/">
+      {% csrf_token %}
+      <label for="vehicle number">Vehicle Number:</label>
+      <input type="text" id="vehicle_number" name="vehicle_number" />
+
+      <label for="vehicle type">Vehicle Type:</label>
+      <input type="text" id="vehicle_type" name="vehicle_type" />
+
+      <label for="dc_number">D.C Number:</label>
+      <input type="text" id="dc_number" name="dc_number" />
+
+      <label for="po_number">P.O. Number:</label>
+      <input type="text" id="po_number" name="po_number" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
